@@ -45,14 +45,7 @@ const TopHeadlines = () => {
         <div className='flex items-center justify-between tablet:w-[475px] laptop:w-[750px]'>
             <div className='text-[18px] font-extrabold flex items-center text-[#2f2f2f] fontfamily tablet:text-[20px]'><div className='w-1 h-8 rounded-full bg-[#2f2f2f] mr-1'></div>Top Headlines</div>
             <div>
-                <select value={newscountry} onChange={(e) => setNewsCountry(e.target.value)}className='p-2 bg-[#f0f1f2] outline-none rounded-sm'>
-                  <option disabled>-- Select Country --</option>
-                  {
-                    countries.map((country) => (
-                      <option key={country?.id} value={country?.countryCode}>{country?.countryName}</option>
-                    ))
-                  }
-                </select>
+                
             </div>
         </div>
         <div>
